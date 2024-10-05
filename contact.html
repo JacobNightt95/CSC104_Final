@@ -1,0 +1,88 @@
+﻿<!-- The first line of our html file tells the browser that this is an HTML5 page -->
+<!DOCTYPE html>
+<!-- the html tag is required to be in our html pages -->
+<html lang="en">
+    <!-- this is information for the browser and search engine -->
+    <head>
+        <!-- tell the browser to expect pretty much any character from any language on this page -->
+        <meta charset="UTF-8">
+        <!-- this tag will help with responsive design, i.e., making our page look good on a mobile device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this is the text that appears in the browser tab - it should be short, sweet and descriptive -->
+        <title>Contact | Pandora's Prints</title>
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <!-- all of the page content - text, images, links - goes in the body section -->
+    <body>
+        <!-- Header Section, contains things such as the website logo, navigation menu, search bar, contact info, call-to-action buttons, etc. -->
+        <header>
+            <!-- h1 is the top level heading tag; there should be 1 and only 1 h1 tag on a page -->
+            <h1>Pandora's Prints</h1>
+            <!-- Navigation Menu -->
+            <nav>
+                <!-- Navigation link to the "Home" page -->
+                <a href="index.html">Home</a> |
+                <!-- Navigation link to the "About" page -->
+                <a href="about.html">About</a> |
+                <!-- Navigation link to the "services" page -->
+                <a href="services.html">Services</a> |
+                <!-- Navigation link to the "FAQ" page -->
+                <a href="faq.html">FAQ</a> |
+                <!-- Navigation link to the "Contact" page -->
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- h2 is the second level heading; use as many as make sense for your content -->
+            <h2>Get in Touch</h2> <!-- Heading introducing the contact form -->
+            <!-- p is the paragraph tag - by default there is spacing around it -->
+            <p>We would love to hear from you! Whether you have questions, need more information about our workshops, or want to sign up, feel free to reach out.</p>
+        
+            <!-- Contact form allowing users to submit their details -->
+            <form action="submit-form.php" method="POST">
+                <!-- Fieldset groups the form elements related to contact information -->
+                <fieldset>
+                    <!-- Legend defines a caption for the fieldset element -->
+                    <legend>Contact Information</legend>
+                    <!-- Input for the user's full name -->
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <!-- Input for the user's email address -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="yourname@domain.com" required>
+                    
+                    <!-- Text area for users to type their message or questions -->
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message here." required></textarea>
+                    
+                    <!-- add a reset button -->
+                    <input type="reset" value="Clear">
+                    
+                    <!-- Submit button for the form -->
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+            <!-- Contact information for direct email link and business location -->
+            <section class="contact-details">
+                <h3>Contact Details</h3>
+                <p>Email us directly at: <a href="mailto:info@pandorasprints.com">info@pandorasprints.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Artisans Lane, Creative Town, CT 00000</p>
+            </section>
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <!-- Copyright information -->
+            <p>&copy; 2024 Pandora's Prints. All rights reserved.</p>
+        </footer> 
+
+    <!-- the closing body tag should be the second to last line of the code -->
+    </body>
+<!-- the closing html tag should be the last thing on our html pages -->
+</html>

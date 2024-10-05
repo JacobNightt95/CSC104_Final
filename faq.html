@@ -1,0 +1,85 @@
+﻿<!-- The first line of our html file tells the browser that this is an HTML5 page -->
+<!DOCTYPE html>
+<!-- the html tag is required to be in our html pages -->
+<html lang="en">
+    <!-- this is information for the browser and search engine -->
+    <head>
+        <!-- tell the browser to expect pretty much any character from any language on this page -->
+        <meta charset="UTF-8">
+        <!-- this tag will help with responsive design, i.e., making our page look good on a mobile device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this is the text that appears in the browser tab - it should be short, sweet and descriptive -->
+        <title>FAQ | Pandora's Prints</title>
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+     <!-- all of the page content - text, images, links - goes in the body section -->
+    <body>
+       <!-- Header Section, contains things such as the website logo, navigation menu, search bar, contact info, call-to-action buttons, etc. -->
+       <header>
+            <!-- h1 is the top level heading tag; there should be 1 and only 1 h1 tag on a page -->
+            <h1>Pandora's Prints</h1>
+            <!-- Navigation Menu -->
+            <nav>
+                <!-- Navigation link to the "Home" page -->
+                <a href="index.html">Home</a> |
+                <!-- Navigation link to the "About" page -->
+                <a href="about.html">About</a> |
+                <!-- Navigation link to the "services" page -->
+                <a href="services.html">Services</a> |
+                <!-- Navigation link to the "FAQ" page -->
+                <a href="faq.html">FAQ</a> |
+                <!-- Navigation link to the "Contact" page -->
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main content of the FAQ page -->
+        <main>
+            <!-- h2 is the second level heading; use as many as make sense for your content -->
+            <h2>Frequently Asked Questions</h2>
+            <!-- p is the paragraph tag - by default there is spacing around it -->
+            <p>If you have questions, chances are others do too! Here are some common inquiries we receive.</p>
+    
+            <!-- FAQ section formatted as a table -->
+            <table>
+                <thead>
+                    <!-- Table header with two rows: Question and Answer -->
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Each row within the table body contains a frequently asked question and its answer. Each "tr" represents a row while each "td" represents the data cell within the table. -->
+                    <tr>
+                        <td>What should I bring to the workshop?</td>
+                        <td>Just yourself! We provide all necessary tools and safety equipment.</td>
+                    </tr>
+                    <tr>
+                        <td>Are your workshops beginner-friendly?</td>
+                        <td>Absolutely! Our workshops are designed to accommodate all skill levels, including beginners.</td>
+                    </tr>
+                    <tr>
+                        <td>How can I sign up for a class?</td>
+                        <td>You can sign up online through our Contact page or call us directly.</td>
+                    </tr>
+                    <tr>
+                        <td>Do I need prior experience to attend?</td>
+                        <td>No prior experience is necessary. All of our workshops are tailored for beginners.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <!-- Copyright information -->
+            <p>&copy; 2024 Pandora's Prints. All rights reserved.</p>
+        </footer> 
+
+    <!-- the closing body tag should be the second to last line of the code -->
+    </body>
+<!-- the closing html tag should be the last thing on our html pages -->
+</html>

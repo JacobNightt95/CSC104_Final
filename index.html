@@ -1,0 +1,60 @@
+﻿<!-- The first line of our html file tells the browser that this is an HTML5 page -->
+<!DOCTYPE html>
+<!-- the html tag is required to be in our html pages -->
+<html lang="en">
+    <!-- this is information for the browser and search engine -->
+    <head>
+        <!-- tell the browser to expect pretty much any character from any language on this page -->
+        <meta charset="UTF-8">
+        <!-- this tag will help with responsive design, i.e., making our page look good on a mobile device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this is the text that appears in the browser tab - it should be short, sweet and descriptive -->
+        <title>Home | Pandora's Prints</title>
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <!-- all of the page content - text, images, links - goes in the body section -->
+    <body>
+        <!-- Header Section, contains things such as the website logo, navigation menu, search bar, contact info, call-to-action buttons, etc. -->
+        <header>
+            <!-- h1 is the top level heading tag; there should be 1 and only 1 h1 tag on a page -->
+            <h1>Pandora's Prints</h1>
+            <!-- Navigation Menu -->
+            <nav>
+                <!-- Navigation link to the "Home" page -->
+                <a href="index.html">Home</a> |
+                <!-- Navigation link to the "About" page -->
+                <a href="about.html">About</a> |
+                <!-- Navigation link to the "services" page -->
+                <a href="services.html">Services</a> |
+                <!-- Navigation link to the "FAQ" page -->
+                <a href="faq.html">FAQ</a> |
+                <!-- Navigation link to the "Contact" page -->
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main content of the Home Page -->
+        <main class="flex-container"> <!-- A flex container is a parent element with display: flex that enables its child elements to be arranged and aligned efficiently in a flexible, responsive layout. -->
+            <!-- A div class is an HTML element with a specified class attribute used to group content and apply CSS styles or JavaScript functionality consistently across elements with the same class name. -->
+            <div class="main-text">
+                <!-- h2 is the second level heading; use as many as make sense for your content -->
+                <h2>Welcome to Pandora's Prints!</h2>
+                <!-- p is the paragraph tag - by default there is spacing around it -->
+                <p>Your hub for learning 3D printing, welding, smithing, and more! We offer hands-on workshops and expert guidance, ensuring that you leave with new skills and great memories.</p>
+            </div>
+            <!-- The image src attribute in HTML specifies the URL or file path of the image to be displayed within an <img> element on a webpage. -->
+            <img src="Images/Home_Image.jpg" alt="Man and his father working on a project together." class="custom-image"> 
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <!-- Copyright information -->
+            <p>&copy; 2024 Pandora's Prints. All rights reserved.</p>
+        </footer>  
+
+    <!-- the closing body tag should be the second to last line of the code -->
+    </body>
+<!-- the closing html tag should be the last thing on our html pages -->
+</html>

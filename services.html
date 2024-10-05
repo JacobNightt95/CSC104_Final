@@ -1,0 +1,95 @@
+﻿<!-- The first line of our html file tells the browser that this is an HTML5 page -->
+<!DOCTYPE html>
+<!-- the html tag is required to be in our html pages -->
+<html lang="en">
+    <!-- this is information for the browser and search engine -->
+    <head>
+        <!-- tell the browser to expect pretty much any character from any language on this page -->
+        <meta charset="UTF-8">
+        <!-- this tag will help with responsive design, i.e., making our page look good on a mobile device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this is the text that appears in the browser tab - it should be short, sweet and descriptive -->
+        <title>Services | Pandora's Prints</title>
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <!-- all of the page content - text, images, links - goes in the body section -->
+    <body>
+        <!-- Header Section, contains things such as the website logo, navigation menu, search bar, contact info, call-to-action buttons, etc. -->
+        <header>
+            <!-- h1 is the top level heading tag; there should be 1 and only 1 h1 tag on a page -->
+            <h1>Pandora's Prints</h1>
+            <!-- Navigation Menu -->
+            <nav>
+                <!-- Navigation link to the "Home" page -->
+                <a href="index.html">Home</a> |
+                <!-- Navigation link to the "About" page -->
+                <a href="about.html">About</a> |
+                <!-- Navigation link to the "services" page -->
+                <a href="services.html">Services</a> |
+                <!-- Navigation link to the "FAQ" page -->
+                <a href="faq.html">FAQ</a> |
+                <!-- Navigation link to the "Contact" page -->
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main content section for the Services page-->
+        <main>
+            <!-- h2 is the second level heading; use as many as make sense for your content -->
+            <h2>Our Services</h2> <!-- Section Title -->
+
+            <!-- p is the paragraph tag - by default there is spacing around it -->
+            <p>Your hub for learning 3D printing, welding, smithing, and more! We offer hands-on workshops and expert guidance, ensuring that you leave with new skills and great memories.</p>
+            <p>At Pandora's Prints, we offer a range of specialized services to bring your creative projects to life. Whether you're a hobbyist or a professional, we have something for everyone.</p>
+
+            <!-- Grid layout for the services -->
+            <section class="services-grid">
+                <!-- 3D Printing Service Block -->
+                <article class="service-item">
+                    <img src="Images/3D_Printing.jpg" alt="3D printed boat." class="custom-image"> <!-- Image related to 3D Printing -->
+                    <h3>3D Printing</h3> <!-- Service title -->
+                    <p>Our advanced 3D printing services allow you to create intricate designs with precision. We work with a variety of materials to suit your project's needs.</p> <!-- Brief description of the service -->
+                </article>
+
+                <!-- Welding Service Block -->
+                <article class="service-item">
+                    <img src="Images/Welding.jpg" alt="Man welding" class="custom-image"> <!-- Image related to Welding -->
+                    <h3>Welding</h3> <!-- Service title -->
+                    <p>Our welding experts are skilled in a variety of techniques, ensuring strong and durable results. Whether it's for artistic or structural purposes, we've got you covered.</p> <!-- Brief description of the service -->
+                </article>
+
+                <!-- Glass Blowing Service Block -->
+                <article class="service-item">
+                    <img src="Images/Glass_Blowing.jpg" alt="Man blowing large vase" class="custom-image"> <!-- Image related to Glass Blowing -->
+                    <h3>Glass Blowing</h3> <!-- Service title -->
+                    <p>Create beautiful and unique glass pieces with our expert glass blowing services. Our team will guide you through the process from start to finish.</p> <!-- Brief description of the service -->
+                </article>
+
+                <!-- Woodworking Service Block -->
+                <article class="service-item">
+                    <img src="Images/Woodworking.jpg" alt="Built chicken coop from Woodworking class." class="custom-image"> <!-- Image related to Woodworking -->
+                    <h3>Woodworking</h3> <!-- Service title -->
+                    <p>From furniture to artistic wood carvings, our woodworking services cater to all levels of craftsmanship. We use the highest quality materials to ensure a lasting finish.</p> <!-- Brief description of the service -->
+                </article>
+
+                <!-- Smithing Service Block - New Addition -->
+                <article class="service-item">
+                    <img src="Images/Smithing.jpg" alt="Man working on forged blade." class="custom-image"> <!-- Image related to Smithing -->
+                    <h3>Smithing</h3> <!-- Service title -->
+                    <p>Our smithing services offer the opportunity to work with metals and create bespoke tools, sculptures, and hardware. Our expert smiths will help you shape metal into functional and decorative items.</p> <!-- Brief description of the service -->
+                </article>
+            </section>
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <!-- Copyright information -->
+            <p>&copy; 2024 Pandora's Prints. All rights reserved.</p>
+        </footer>   
+
+     <!-- the closing body tag should be the second to last line of the code -->
+    </body>
+<!-- the closing html tag should be the last thing on our html pages -->
+</html>
