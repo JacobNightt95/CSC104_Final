@@ -17,3 +17,6 @@ This project is a basic, multi-page website for Pandora's Prints, a workshop off
 1.	Open index.html to view the website.
 2.	The navigation bar links to other pages.
 3.	Ensure styles.css is in the same directory to apply proper styling.
+
+**References:**
+W3Schools.com. (n.d.). https://www.w3schools.com/html/default.asp
