@@ -1,6 +1,238 @@
-.custom-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+/* Body settings */
+body {
+    font-family: Arial, sans-serif; /* Font style for the whole site */
+    line-height: 1.6; /* Space between lines of text */
+    color: #333; /* Dark gray text color for readability */
+    background-color: #f4f4f9; /* Light gray background */
+    padding: 20px; /* Space around the page content */
 }
 
+/* Header styling */
+header {
+    background-color: #000; /* Black background */
+    padding: 20px 0; /* Vertical padding */
+    color: white; /* White text */
+    text-align: center; /* Center-align text */
+    margin-bottom: 40px; /* Space below header */
+}
+
+/* Navigation list */
+nav ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding */
+}
+
+nav ul li {
+    display: inline; /* List items in one line */
+    margin-right: 15px; /* Space between links */
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+}
+
+nav ul li a:hover {
+    color: #f4f4f9; /* Light color on hover */
+}
+
+/* Main content area settings */
+main {
+    max-width: 1200px; /* Max width of the main content */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px; /* Space inside the main content */
+}
+
+/* Heading styles */
+h1, h2, h3 {
+    color: #7851A9; /* Royal Purple color for headings */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+h1 {
+    font-size: 2.5rem; /* Main title size */
+}
+
+h2 {
+    font-size: 2rem; /* Section title size */
+}
+
+h3 {
+    font-size: 1.5rem; /* Subsection title size */
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 20px; /* Space below paragraphs */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+/* .custom-image class is used to make images responsive. */
+.custom-image {
+    width: 100%;    /* Ensures the image takes up the full width of its container */
+    max-width: 500px;    /* Image won't exceed max width limit */
+    height: auto;    /* Keeps the image's original ratio */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+    text-align: center; /* Center-align text */
+    padding: 10px; /* Padding inside footer */
+    margin-top: 40px; /* Space above footer */
+}
+
+/* Flexbox container */
+.flex-container {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    margin: 40px 0; /* Vertical spacing */
+}
+
+.main-text {
+    flex: 1; /* Takes up available space */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.flex-container img {
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Grid layout for services */
+.services-grid {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    grid-gap: 20px; /* Space between grid items */
+}
+
+.service-item {
+    background-color: white; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    padding: 20px; /* Space inside each block */
+    text-align: center; /* Center-align text */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between borders */
+    margin: 20px 0; /* Vertical spacing */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light borders */
+    padding: 10px; /* Space inside cells */
+    text-align: left; /* Align text left */
+}
+
+th {
+    background-color: #7851A9; /* Royal Purple background */
+    color: white; /* White text */
+}
+
+td {
+    background-color: #fff; /* White background */
+}
+
+/* Contact form styling */
+form {
+    background-color: white; /* White background */
+    padding: 20px; /* Space inside form */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Space above form */
+}
+
+
+fieldset {
+    border: none; /* Remove default border */
+    margin-bottom: 20px; /* Space below fieldset */
+}
+
+label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px; /* Space below label */
+    font-weight: bold; /* Bold text */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Space inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+}
+
+textarea {
+    resize: vertical; /* Vertical resize only */
+}
+
+button {
+    background-color: #7851A9; /* Royal Purple background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Space inside button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Standard font size */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    text-decoration-line: underline; /* Underlines the text */
+}
+
+button:hover {
+    background-color: #6a3d8a; /* Darker background on hover */
+}
+
+/* Contact details section */
+.contact-details {
+    margin-top: 20px; /* Space above contact details */
+}
+
+.contact-details h3 {
+    color: #3d3d6b; /* Dark blue color for headings */
+}
+
+.contact-details p {
+    font-size: 1.1rem; /* Slightly larger font size */
+    margin-bottom: 10px; /* Space below contact details */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    body {
+        padding: 10px; /* Reduced padding */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller title size */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller section title size */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Smaller subsection title size */
+    }
+}
